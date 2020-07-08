@@ -3,6 +3,7 @@ package com.example.myfirstapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // TODO: have to remove this log, only to check git
+        Log.i("info","Main activity got created");
     }
 
     /* Called when the user taps the send button */
@@ -25,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
+        //TODO: have to remove it too
+        Log.d("sandeep","main Activity hitted with sendMessage");
     }
 }

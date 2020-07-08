@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My first app</string>
+    <string name="edit_message">Rahul</string>
+    <string name="button_send">Send</string>
+    <string name="textView">nothing</string>
+</resources>
